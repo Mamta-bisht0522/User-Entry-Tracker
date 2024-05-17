@@ -58,8 +58,8 @@ app.get("/", (req, res) => {
 //   }
 // });
 
-// const routes = require("./src/routes/index.route");
-// app.use(routes);
+const routes = require("./src/routes/index.route");
+app.use(routes);
 
 const PORT = process.env.PORT;
 app.listen(3000 || PORT, () => {
